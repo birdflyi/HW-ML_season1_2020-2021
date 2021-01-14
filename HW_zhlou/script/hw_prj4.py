@@ -208,8 +208,8 @@ def face_clustering(k_min, k_max):
         clf.fit(features)
         SSE.append(clf.inertia_)
     pyplot.plot([i for i in range(k_min, k_max)], SSE)
-    pyplot.xlabel('Sum of Squared Error')
-    pyplot.ylabel('k(number of clusters)')
+    pyplot.xlabel('k(number of clusters)')
+    pyplot.ylabel('Sum of Squared Error')
     pyplot.show()
 
     # k = 20 开始收敛

@@ -50,7 +50,7 @@ def preprocess(news_groups_dir):
 
 
 def main():
-    # 划分
+    # 预处理：读入文本，转换为词袋矩阵
     X, y = preprocess(news_groups_dir)
     # shuffle
     data_class_zip = list(zip(X, y))  # zip压缩合并，将数据与标签对应压缩

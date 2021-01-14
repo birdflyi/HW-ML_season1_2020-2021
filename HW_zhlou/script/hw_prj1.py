@@ -67,8 +67,8 @@ def show_accuracy(a, b, tip):
 
 
 def print_accuracy(clf, x_train, y_train, x_test, y_test):
-    print('training score: %.5f' % (clf.score(x_train, y_train)))
-    print('testing score: %.5f' % (clf.score(x_test, y_test)))
+    # print('training score: %.5f' % (clf.score(x_train, y_train)))
+    # print('testing score: %.5f' % (clf.score(x_test, y_test)))
     show_accuracy(clf.predict(x_train), y_train, 'training data')
     show_accuracy(clf.predict(x_test), y_test, 'testing data')
 
