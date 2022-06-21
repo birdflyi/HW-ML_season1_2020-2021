@@ -102,11 +102,12 @@ def plot_decision_regions(X, y, show_axis=None, test_idx=None, resolution=0.02):
         X_test, y_test = X[test_idx, :], y[test_idx]
         plt.scatter(X_test[:, show_axis[0]], X_test[:, show_axis[1]], c='', alpha=1.0, linewidth=1,
                     edgecolors='black', marker='o', s=135, label='test set')
-        plt.title('svm classification', fontsize=19, color='b')
-        plt.xlabel(show_axis_label[0] + '(standardized)', fontsize=15)
-        plt.ylabel(show_axis_label[1] + '(standardized)', fontsize=15)
-        plt.legend(loc=2, scatterpoints=2)
-        plt.show()
+    
+    plt.title('svm classification', fontsize=19, color='b')
+    plt.xlabel(show_axis_label[0] + '(standardized)', fontsize=15)
+    plt.ylabel(show_axis_label[1] + '(standardized)', fontsize=15)
+    plt.legend(loc=2, scatterpoints=2)
+    plt.show()
 
 
 if __name__ == '__main__':
